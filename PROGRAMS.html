@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Programação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<center>
+  <head><img src="http://santaclaraecoresort.com.br/images/programacao-h3.png"></head>
+</center>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Programação</a>
+    <a href="#variáveis" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Variáveis</a>
+    <a href="#atribuição" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Atribuição</a>
+    <a href="#condição" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Condição</a>
+    <a href="#repetição" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Repetição</a>
+  </div>
+</div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div id="programação" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Programação de Computadores</h1>
+      <p>Programação é o processo de escrita, teste e manutenção de um programa de computador. O programa é escrito em uma linguagem de programação, embora seja possível, com alguma dificuldade, escrevê-lo directamente em linguagem de máquina. Diferentes partes de um programa podem ser escritas em diferentes linguagens.<br>Diferentes linguagens de programação funcionam de diferentes modos. Por esse motivo, os programadores podem criar programas muito diferentes para diferentes linguagens; muito embora, teoricamente, a maioria das linguagens possa ser usada para criar qualquer programa. Para mais informações sobre estes métodos, veja Linguagem de programação.<br>Software é um nome colectivo para programas de computadores e dados.<br>Um programa de computador é um conjunto de instruções que descrevem uma tarefa a ser realizada por um computador. O termo pode ser uma referência ao código fonte, escrito em alguma linguagem de programação, ou ao arquivo que contém a forma executável deste código fonte.
+</p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div id="variáveis" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Variáveis</h1>
+      <p>Na programação, uma variável é um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão. Enquanto as variáveis só "existem" em tempo de execução, elas são associadas a "nomes", chamados identificadores, durante o tempo de desenvolvimento.<br>uando nos referimos à variável, do ponto de vista da programação de computadores, estamos tratando de uma “região de memória (do computador) previamente identificada cuja finalidade é armazenar os dados ou informações de um programa por um determinado espaço de tempo”. A memória do computador se organiza tal qual um armário com várias divisões. Sendo cada divisão identificada por um endereço diferente em uma linguagem que o computador entende.<br>O computador armazena os dados nessas divisões, sendo que em cada divisão só é possível armazenar um dado e toda vez que o computador armazenar um dado em uma dessas divisões, o dado que antes estava armazenado é eliminado. O conteúdo pode ser alterado, mas somente um dado por vez pode ser armazenado naquela divisão.<br>O computador identifica cada divisão por intermédio de um endereço no formato hexadecimal, e as linguagens de programação permitem nomear cada endereço ou posição de memória, facilitando a referência a um endereço de memória. Uma variável é composta por dois elementos básicos: o conteúdo,o valor da variável e identificador, um nome dado à variável para possibilitar sua utilização.<br>Podem ter seu conteúdo alterado por um comando de atribuição.<br><br><b>Variáveis globais</b> são aquelas declaradas fora do escopo das funções.<br><b>Variáveis locais </b> são aquelas declaradas no inicio do bloco e seus escopos são restritos aos blocos em que foram declaradas.</p>
+      <p>
+    <table border="1" width="759">
+      <tbody><tr>
+        <td align="center" width="84"><strong>Tipo&nbsp;&nbsp; </strong></td>
+        
+        <td align="center" width="556"><strong>Valores Válidos</strong></td>
+      </tr>
+      <tr>
+        <td width="84">char</td>
+        
+        <td width="556">letras e símbolos:&nbsp;&nbsp; 'a',&nbsp; 'b', 'H', '^', '*','1','0'</td>
+      </tr>
+      <tr>
+        <td width="84">int </td>
+        
+        <td width="556">de -32767 até 32767 (apenas números inteiros)</td>
+      </tr>
+      <tr>
+        <td width="84">float</td>
+        
+        <td width="556">de -3.4 x 10<sup><sup>38</sup></sup> até +3.4 x 10<sup><sup>+38</sup></sup>com
+        até 6 dígitos de precisão</td>
+      </tr>
+      <tr>
+        <td width="84">double</td>
+        
+        <td width="556">de -1.7 x 10<sup><sup>308</sup></sup> até +1.7 x 10<sup><sup>+308</sup></sup>com
+        até 10 dígitos de precisão</td>
+      </tr>
+    </tbody>
+    </table></p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div id="atribuição" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Atribuição</h1>
+      <p>A parte mais importante de qualquer programa é o processo.<br>O processamento, em geral, é dado de forma genérica, ou seja, por variáveis.<br>Cada variável tem um alcance e forma diferente de trabalhar o dado nela gravado. Por exemplo, se determinarmos uma variável inteira, você jamais poderá digitar um número decimal, pois todos os números depois do sinal decimal serão ignorados. Se formos escrever um número decimal, devemos usar o ponto (.) ao invés da vírgula (,), se for determinado uma variável de caracter pode ser tanto um inteiro como uma letra e assim por diante.<br>A atribuição de valores às variáveis se dá de duas forma: ou na inicialização ou durante um processo.<br>A atribuição é indicada pelo sinal de igual (=) sempre da direita para esqueda. O que eu quero dizer é que a variável à esquerda do igual recebe o valor ou resultado de uma conta à direita do igual.<br><br>Exemplo: Se digito a=b, quero dizer que a receberá o valor contido em b. Ou a=b+c, quero dizer que a receberá o valor do resultado de b+c.<br></p><p>/* EXEMPLO1 Aqui está um exemplo de variáveis recebendo valores durante um processo*/<br>
+
+    #include  &lt;stdio.h&gt;<br>
+
+    int main (void){<br>
+        &nbsp;&nbsp;&nbsp;int a;<br>
+        &nbsp;&nbsp;&nbsp;float b;<br>
+        &nbsp;&nbsp;&nbsp;a=15+5; // atribuindo o valor de 15+5 a variavel a (resultara em 20)<br>
+        &nbsp;&nbsp;&nbsp;b=1.5-0.5; // atribuindo o valor de 1,5-0,5 a variavel b (resultara em 1,0000000)<br>
+        &nbsp;&nbsp;&nbsp;/* Lembre-se: Em C, o ponto e o separador decimal, nao a virgula!*/<br>
+        &nbsp;&nbsp;&nbsp;printf ("a=%d\n", a);<br>
+        &nbsp;&nbsp;&nbsp;printf ("b=%f\n", b);<br>
+        &nbsp;&nbsp;&nbsp;return 0;<br>
+    }
+</p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div id="condição" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Condição</h1>
+      <p>Expressão condicional é, na ciência da computação, uma estrutura de desvio do fluxo de controle presente em linguagens de programação que realiza diferentes computações ou ações dependendo se a seleção (ou condição) é verdadeira ou falsa, em que a expressão é processada e transformada em um valor booleano. Nas linguagens de programação, usamos as palavras em inglês para expressar uma estrutura de seleção, como if, else if e else.</p>
+        <table border="1" width="657">
+          <tbody><tr>
+            <td width="103"><br>
+            IF&nbsp; ELSE</td>
+            <td width="546"><strong><font color="#800080">if</font> </strong>(<font color="#990000"><b>condição</b></font>)
+            <br>
+            &nbsp;&nbsp; <strong><font color="#800000">{ <br>
+            &nbsp;&nbsp;&nbsp; lista de instruções<br>
+            &nbsp;&nbsp;&nbsp; } </font></strong><br>
+            <font color="#800080"><strong>else </strong></font><br>
+            &nbsp;&nbsp;&nbsp; <strong><font color="#800040">{ <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; lista de instruções <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; }</font></strong> <br>
+            <big><big><strong><font color="#00FF00">&nbsp;......</font></strong></big></big></td>
+          </tr>
+          </tbody>
+        </table>
+    <p>
+      <ul>
+        <li>Neste caso, se a condição colocada após o IF não obtiver resultado verdadeiro,
+          automaticamente serão feitas as <strong><font color="#800040">instruções que estão
+          dentro do ELSE</font></strong>, desconsiderando aquelas que estão abaixo do IF. Caso a
+          condição seja VERDADEIRA, serão feitas as <strong><font color="#800000">instruções
+          que estão entre chaves abaixo do IF</font>. </strong></li>
+        <li>Quando acabar tanto a lista de instruções abaixo do IF quanto a lista de instruções
+          referente ao ELSE, <font color="#00FF00">automaticamente serão desenvolvidas as
+          instruções que estão após a lista de instruções do ELSE (....)</font>.</li>
+      </ul>
+    </p>
+    </div>
+  </div>
+  <div class="w3-row w3-padding-64">
+    <div id="repetição" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Repetição</h1>
+      <p>Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.<br>São utilizadas, por exemplo, para repetir ações semelhantes que são executadas para todos os elementos de uma lista de dados, ou simplesmente para repetir um mesmo processamento até que a condição seja satisfeita.<br>Existem 4 estruturas de repetição básica para praticamente todas as linguagens de programação, seja C ou javascript.
+      <br><b>While (enquanto)</b></p>
+      <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">É dentre as 3 a mais simples.</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Repete um bloco de código enquanto uma condição permanecer verdadeira</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Caso a condição seja falsa, os comandos dentro do while não serão executados e a execução continuará &nbsp;com os comandos após o while</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">A repetição do while é controlada por uma condição que verifica alguma variável. Porém para que o while funcione corretamente é importante que essa variável sofra alteração dentro do while. Ex: um contador.</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Após entrar dentro da repetição, o bloco de comandos sempre será executado, mesmo que dentro do bloco a variável que está controlando a execução seja alterada.</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;"><span style="font-weight: 400;">Exemplo de código:</span></span></li>
+      </ul>
+      <pre>
+        numero = 42;
+        divisor = 1;
+
+        while (divisor &lt;= numero) {
+            resto = numero % divisor;
+            if (resto == 0) {
+                printf("Divisor encontrado: %d \n", divisor);
+            }
+            divisor = divisor + 1;
+        }
+      </pre>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
